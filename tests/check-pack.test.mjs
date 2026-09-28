@@ -27,7 +27,7 @@ function fixture(t) {
     assert(path.basename(target).startsWith('ln-ia-check-'));
     fs.rmSync(target, {recursive: true, force: true});
   });
-  for (const item of ['scripts/check-pack.mjs', 'index.html', 'src', 'package-lock.json',
+  for (const item of ['scripts/check-pack.mjs', 'index.html', 'guide.html', 'src', 'package-lock.json',
     'vite.config.js', 'PROMPT-MAITRE-PRODUCTION-DEPLOIEMENT.md', 'modeles-candidat', 'public', 'dist']) {
     copyFixture(path.join(root, item), path.join(directory, item));
   }
