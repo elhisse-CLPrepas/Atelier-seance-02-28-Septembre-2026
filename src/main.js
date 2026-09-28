@@ -97,7 +97,13 @@ let deadline = null;
 let ticker = null;
 
 function header() {
-  return `<header class="header"><a class="brand" href="#slide/1" aria-label="LN-IA · Première diapositive"><img src="${import.meta.env.BASE_URL}logo-ln-ia.png" alt="LN-IA" /></a><div class="session-label">Challenge 100 Jours <span>Séance 02 · Module 01</span></div><nav aria-label="Outils de présentation"><a href="#ressources" class="quiet-link">Ressources</a><button id="fullscreen" class="quiet" title="Plein écran (F)">Plein écran</button></nav></header>`;
+  return `<header class="header"><a class="brand" href="#slide/1" aria-label="LN-IA · Première diapositive"><img src="${import.meta.env.BASE_URL}logo-ln-ia.png" alt="LN-IA" /></a><div class="session-label">Challenge 100 Jours <span>Séance 02 · Module 01</span></div><nav aria-label="Outils de présentation"><a href="#ressources" class="quiet-link">Ressources</a><button id="fullscreen" class="quiet" title="Plein écran (F)">Plein écran</button></nav></header>
+    <nav class="support-links" aria-label="Supports de la séance">
+      <span class="support-label">Supports de la séance</span>
+      <a class="support-guide" href="${import.meta.env.BASE_URL}guide.html">Ouvrir le guide interactif <span aria-hidden="true">→</span></a>
+      <a href="${import.meta.env.BASE_URL}documents-candidats/guide-illustre-seance-02-module-01.pdf" download>Guide illustré <span class="support-format">PDF · 10 pages</span></a>
+      <a href="${import.meta.env.BASE_URL}documents-candidats/cahier-pratique-seance-02-module-01.pdf" download>Cahier pratique <span class="support-format">PDF · À remplir</span></a>
+    </nav>`;
 }
 function render() {
   const resources = window.location.hash === '#ressources';

@@ -58,7 +58,7 @@ Les brouillons et statuts du guide HTML restent en mémoire dans la page. Ils ne
 
 - Compilation du site et de l'HTML autonome : réussie.
 - Contrôle du pack et des copies des documents : réussi.
-- 20 tests Node, dont 9 tests du guide dans un DOM simulé : réussis. Ils couvrent les chapitres, ancres, recherche, méthode, exports, minuteur, menu et conservation des brouillons pendant la navigation.
+- 21 tests Node, dont 9 tests du guide et un test des accès aux supports dans un DOM simulé : réussis. Ils couvrent les chapitres, ancres, recherche, méthode, exports, minuteur, menu, conservation des brouillons et présence des trois liens sur l’accueil, les 16 écrans et les ressources de la présentation.
 - PDF : 10 et 8 pages, signets et liens contrôlés, 54 champs du cahier initialisés sans réponses personnelles ; les 18 pages rendues ont été inspectées visuellement.
 - Affichage web dans un navigateur réel, sur mobile et en projection : non vérifié, car aucun navigateur connecté n'était disponible. Les tests du DOM simulé ne valident pas le rendu visuel du navigateur.
 

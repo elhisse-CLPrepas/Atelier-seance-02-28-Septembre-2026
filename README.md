@@ -51,7 +51,7 @@ Ouvrir `http://127.0.0.1:4173/`. Fermer le serveur déjà lancé sur ce port ava
 
 ### Guide interactif et PDF
 
-Ouvrir [le guide interactif](guide.html) dans le site lancé avec Vite ou le serveur local. Il propose huit chapitres, une recherche, des prompts copiables, un minuteur et des brouillons exportables. Les deux PDF sont accessibles depuis sa rubrique « Téléchargements » et depuis les ressources de la présentation.
+Ouvrir [le guide interactif](guide.html) dans le site lancé avec Vite ou le serveur local. Il propose huit chapitres, une recherche, des prompts copiables, un minuteur et des brouillons exportables. La barre « Supports de la séance », sous l’en-tête de la présentation, donne directement accès au guide interactif et aux deux PDF dès l’accueil et sur les 16 écrans. Les PDF restent aussi accessibles depuis « Ressources » et la rubrique « Téléchargements » du guide.
 
 - [Guide illustré — 10 pages](public/documents-candidats/guide-illustre-seance-02-module-01.pdf) : sommaire cliquable, signets, méthode et exemples.
 - [Cahier pratique — 8 pages](public/documents-candidats/cahier-pratique-seance-02-module-01.pdf) : 54 champs remplissables, exercices et bilan.
