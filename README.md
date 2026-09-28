@@ -49,6 +49,17 @@ Ouvrir `http://127.0.0.1:4173/`. Fermer le serveur déjà lancé sur ce port ava
 
 ## Documents candidats
 
+### Guide interactif et PDF
+
+Ouvrir [le guide interactif](guide.html) dans le site lancé avec Vite ou le serveur local. Il propose huit chapitres, une recherche, des prompts copiables, un minuteur et des brouillons exportables. Les deux PDF sont accessibles depuis sa rubrique « Téléchargements » et depuis les ressources de la présentation.
+
+- [Guide illustré — 10 pages](public/documents-candidats/guide-illustre-seance-02-module-01.pdf) : sommaire cliquable, signets, méthode et exemples.
+- [Cahier pratique — 8 pages](public/documents-candidats/cahier-pratique-seance-02-module-01.pdf) : 54 champs remplissables, exercices et bilan.
+
+Ces supports sont adaptés du guide Word candidats ci-dessous. Pour produire un HTML autonome, exécuter `npm run build:standalone`, puis ouvrir `output/html/guide-seance-02-autonome.html`. Pour conserver ses liens PDF hors ligne, garder le dossier `output/pdf` à côté du dossier `output/html`. La commande `npm run build:pdf` génère ces PDF après installation des dépendances Python indiquées dans [le guide de maintenance](docs/GUIDE-INTERACTIF.md).
+
+Les brouillons du guide HTML restent en mémoire jusqu'au rechargement ou à la fermeture de la page. Utiliser les boutons d'export pour les conserver.
+
 - `public/documents-candidats/guide-presentation-seance-02-module-01.docx` : support court de la séance.
 - `public/documents-candidats/fiche-candidat-seance-02-module-01.docx` : modèle vierge, sections personnelle, professionnelle et engagement avec signature.
 - `modeles-candidat/` : cinq fichiers Markdown vierges à copier dans le dossier individuel.

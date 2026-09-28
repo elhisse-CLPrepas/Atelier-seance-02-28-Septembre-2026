@@ -7,9 +7,12 @@ import {execFileSync} from 'node:child_process';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const required=[
   'index.html','src/main.js','src/style.css','package-lock.json','vite.config.js',
+  'guide.html','src/guide.js','src/guide.css','src/guide-data.json','dist/guide.html',
   'public/logo-ln-ia.png',
   'public/documents-candidats/guide-presentation-seance-02-module-01.docx',
   'public/documents-candidats/fiche-candidat-seance-02-module-01.docx',
+  'public/documents-candidats/guide-illustre-seance-02-module-01.pdf',
+  'public/documents-candidats/cahier-pratique-seance-02-module-01.pdf',
   'dist/index.html','dist/logo-ln-ia.png',
   'dist/documents-candidats/guide-presentation-seance-02-module-01.docx',
   'dist/documents-candidats/fiche-candidat-seance-02-module-01.docx',
@@ -27,14 +30,16 @@ for(const item of required) {
 const source=fs.readFileSync(path.join(root,'src/main.js'),'utf8');
 assert.equal((source.match(/^\s+slide\(/gm)||[]).length,16,'La présentation doit contenir 16 écrans');
 for(const folder of ['01-depart','02-prompts','03-livrables','04-portfolio-preuves'])assert(source.includes(folder),`Dossier pédagogique absent : ${folder}`);
-const html=fs.readFileSync(path.join(root,'dist/index.html'),'utf8');
+for (const page of ['index.html', 'guide.html']) {
+const html=fs.readFileSync(path.join(root,'dist',page),'utf8');
 for(const [,url] of html.matchAll(/(?:src|href)="([^"#]+)"/g)){
   if(/^(https?:|data:)/.test(url))continue;
   assert(!url.startsWith('/'),`Chemin absolu incompatible avec un sous-dossier : ${url}`);
   const local=path.resolve(root,'dist',url.split('?')[0]);
   assert(fs.existsSync(local),`Ressource construite introuvable : ${url}`);
 }
-for(const file of ['logo-ln-ia.png','documents-candidats/guide-presentation-seance-02-module-01.docx','documents-candidats/fiche-candidat-seance-02-module-01.docx']){
+}
+for(const file of ['logo-ln-ia.png','documents-candidats/guide-presentation-seance-02-module-01.docx','documents-candidats/fiche-candidat-seance-02-module-01.docx','documents-candidats/guide-illustre-seance-02-module-01.pdf','documents-candidats/cahier-pratique-seance-02-module-01.pdf']){
   assert(fs.readFileSync(path.join(root,'public',file)).equals(fs.readFileSync(path.join(root,'dist',file))),`Copie dist différente : ${file}`);
 }
 const forbidden = new Set(['candidats', 'reponses', 'prive', 'node_modules', '.git', '.npmrc', '.netrc', '.ssh', 'qa', '.vscode']);
@@ -73,4 +78,4 @@ if (process.argv.includes('--staged')) {
   }
   console.log(`Index Git contrôlé : ${entries.length} fichiers. Vérifier aussi leur contenu avant publication.`);
 }
-console.log('Contrôle réussi : 16 écrans, cinq modèles, logo et documents présents, ressources relatives, copies dist conformes et chemins de public/dist contrôlés.');
+console.log('Contrôle réussi : 16 écrans, guide interactif, cinq modèles, logo, deux Word et deux PDF ; ressources relatives, copies dist conformes et chemins de public/dist contrôlés.');

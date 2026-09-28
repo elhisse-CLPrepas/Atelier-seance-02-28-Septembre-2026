@@ -1,0 +1,95 @@
+{
+  "title": "Objectif personnel et premières preuves",
+  "subtitle": "Le guide pratique de la séance 02",
+  "author": "Prof. Abderrahman EL HISSE",
+  "date": "28 septembre 2026",
+  "source": "guide-presentation-seance-02-module-01.docx",
+  "chapters": [
+    {
+      "id": "reperes", "number": "01", "title": "Préparer la séance", "short": "Les repères", "phase": "Accueil et diagnostic", "time": "0 à 25 min",
+      "intro": "Vous allez préciser votre objectif, définir trois livrables, améliorer votre texte avec l’IA puis conserver une preuve de votre travail. Les projets seront réalisés progressivement après cet atelier.",
+      "blocks": [
+        {"type": "list", "title": "Quatre résultats à préparer", "items": ["Un objectif personnel relu en quatre rubriques, en dix lignes de contenu environ.", "Trois livrables définis avec leur utilité, une date cible et un contrôle.", "Un prompt adapté et une correction que vous pouvez expliquer.", "Des fichiers retrouvés et une preuve datée de votre travail."]},
+        {"type": "table", "title": "Le parcours de 100 minutes", "heads": ["Temps", "Séquence", "Résultat"], "rows": [["0 à 10 min", "Accueil", "Comprendre les résultats attendus"], ["10 à 25 min", "Diagnostic", "Retrouver les fichiers et repérer une difficulté"], ["25 à 50 min", "Atelier 1", "Écrire l’objectif et définir trois livrables"], ["50 à 70 min", "Atelier 2", "Améliorer puis corriger avec l’IA"], ["70 à 90 min", "Atelier 3", "Classer les fichiers et décrire une preuve"], ["90 à 100 min", "Bilan", "Choisir la prochaine action"]]},
+        {"type": "callout", "title": "Avant de commencer", "text": "Ouvrez votre dossier de séance 01, VS Code ou votre éditeur habituel et votre outil IA. Un brouillon suffit pour rejoindre l’exercice. Git, GitHub et Node.js ne sont pas nécessaires pour pratiquer les exercices."}
+      ],
+      "action": "Ouvrez un fichier de votre dossier et repérez ce qui est présent, à compléter ou à créer."
+    },
+    {
+      "id": "methode", "number": "02", "title": "Comprendre la méthode", "short": "La méthode", "phase": "Les repères à garder", "time": "7 étapes",
+      "intro": "La séance 01 associait les premiers gestes numériques à la méthode LN-IA. Vous appliquez maintenant les deux à votre propre besoin. L’IA propose une formulation ; vous choisissez ce que vous gardez.",
+      "blocks": [
+        {"type": "cycle", "title": "Du besoin à la preuve", "steps": [{"name": "Intention", "text": "Préciser pour qui vous travaillez et le résultat utile."}, {"name": "Prompt", "text": "Donner le contexte et une consigne compréhensible."}, {"name": "Production", "text": "Obtenir une proposition et la lire entièrement."}, {"name": "Contrôle humain", "text": "Comparer les faits, le besoin et le résultat demandé."}, {"name": "Correction", "text": "Décider des modifications et retenir une version."}, {"name": "Classement", "text": "Enregistrer dans le dossier choisi puis rouvrir le fichier."}, {"name": "Preuve", "text": "Dater le travail et expliquer le contrôle et la correction."}]},
+        {"type": "table", "title": "Les mots de l’atelier", "heads": ["Notion", "Sens pratique"], "rows": [["Dossier", "Emplacement qui rassemble des fichiers."], ["Fichier", "Contenu enregistré avec un nom et une extension."], ["Markdown", "Texte simple structuré avec des signes : # introduit un titre."], ["Prompt", "Consigne adressée à l’IA avec le contexte et le résultat attendu."], ["Livrable", "Production que son destinataire pourra utiliser."], ["Preuve", "Trace datée associée à un contrôle et à une explication."], ["Portfolio", "Ensemble organisé de preuves de votre progression."]]},
+        {"type": "callout", "title": "Votre rôle", "text": "Vous fournissez les informations exactes, vous relisez et vous décidez. Le formateur vous aide à comprendre et à refaire les gestes : créer, écrire, enregistrer et retrouver."}
+      ],
+      "action": "Nommez le contrôle humain que vous réaliserez sur votre première production."
+    },
+    {
+      "id": "objectif", "number": "03", "title": "Écrire son objectif", "short": "Mon objectif", "phase": "Atelier 1", "time": "25 à 50 min",
+      "intro": "Commencez avec vos mots. Visez dix lignes de contenu environ. Précisez le public, le besoin et une capacité que vous pourrez montrer. Fichier : 01-depart/objectif-personnel-challenge.md.",
+      "blocks": [
+        {"type": "rubrics", "title": "Les quatre rubriques", "items": [{"title": "Mon point de départ", "text": "Mon activité, mon expérience et ma difficulté principale."}, {"title": "Ce que je veux apprendre à produire", "text": "Mon public, son besoin et la production attendue."}, {"title": "Mes preuves attendues", "text": "Les fichiers, les contrôles et les explications que je pourrai montrer."}, {"title": "Mes trois premiers livrables", "text": "Trois réalisations nommées et distinctes, à détailler dans leur liste."}]},
+        {"type": "quote", "title": "Exemple fictif d’un enseignant", "text": "Je débute dans VS Code. Je veux créer puis vérifier des exercices de circuits pour des élèves de première année scientifique. Je conserverai mes fichiers, mes corrections de calcul et les versions retenues."},
+        {"type": "table", "title": "Trois réalisations distinctes", "heads": ["Livrable", "Utilité", "Premier contrôle"], "rows": [["Fiche de trois exercices avec corrigé", "Faire pratiquer les élèves", "Unités, calculs et niveau"], ["Grille de vérification", "Relire chaque exercice", "Tester les critères sur un exercice"], ["Guide d’utilisation de la fiche", "Expliquer le travail demandé", "Faire relire les consignes"]]},
+        {"type": "text", "title": "Préciser ses trois projets", "text": "Dans 03-livrables/liste-premiers-livrables.md, indiquez pour chaque projet le nom, le bénéficiaire, l’utilité, le format, la date cible et le premier contrôle. Une date peut rester « à confirmer ». Un professionnel peut prévoir un compte rendu, une checklist et un guide de classement ; un coach, une trame d’entretien fictif, une fiche d’atelier et un message de suivi."},
+        {"type": "callout", "title": "Organiser les 25 minutes", "text": "4 minutes pour observer et choisir ; 8 pour écrire ; 8 pour préciser les livrables ; 5 pour relire et enregistrer."}
+      ],
+      "action": "Écrivez « Je commence par… parce que… », enregistrez puis relisez votre objectif à voix haute."
+    },
+    {
+      "id": "prompt", "number": "04", "title": "Améliorer puis décider", "short": "Le prompt et le contrôle", "phase": "Atelier 2", "time": "50 à 70 min",
+      "intro": "Remplacez les champs entre crochets et retirez les renseignements personnels inutiles. Conservez la demande réellement utilisée et votre décision dans 02-prompts/premiers-prompts.md.",
+      "blocks": [
+        {"type": "prompt", "title": "Prompt maître à personnaliser", "filename": "prompt-objectif-personnel.md", "text": "Tu es mon assistant pédagogique pour le Challenge 100 Jours LN-IA. Aide-moi à clarifier mon objectif personnel.\n\nMon brouillon : [coller mon texte].\nMon public ou bénéficiaire : [préciser].\nMes contraintes de temps et de moyens : [préciser].\n\nAméliore la clarté sans changer mon intention. Utilise seulement les faits fournis. Si une information indispensable manque, pose au maximum trois questions avant de rédiger. N’invente ni expérience, ni compétence, ni résultat déjà obtenu.\n\nPrésente dix lignes de contenu environ en quatre rubriques : mon point de départ, ce que je veux apprendre à produire, mes preuves attendues, mes trois premiers livrables. Place les détails dans une liste séparée si nécessaire.\n\nIndique les éléments que je dois encore confirmer. Je relirai le texte et choisirai moi-même la version finale."},
+        {"type": "list", "title": "Relire avant de garder", "items": ["Comparer le métier, le public, les moyens et les délais à votre brouillon.", "Vérifier que les trois livrables répondent à votre besoin.", "Retirer les faits ajoutés et les promesses que vous ne pouvez pas justifier.", "Conserver les améliorations utiles et reformuler avec vos propres mots."]},
+        {"type": "prompt", "title": "Demander une correction précise", "filename": "prompt-correction-ciblee.md", "text": "Corrige uniquement [passage]. Remplace [promesse trop large] par [réalisation limitée]. Ajoute [contrôle humain]. Retire [information non fournie]. Garde mon public et mon intention."},
+        {"type": "callout", "title": "Enregistrer sa décision", "text": "Gardez le brouillon, la demande, la réponse utile, votre correction et la date dans premiers-prompts.md. L’objectif contient la version retenue. Répartition : 4 minutes de personnalisation, 5 de lecture, 6 de contrôle et 5 d’enregistrement."}
+      ],
+      "action": "Choisissez une correction précise et expliquez pourquoi vous l’avez retenue."
+    },
+    {
+      "id": "dossiers", "number": "05", "title": "Organiser ses fichiers", "short": "Mes quatre dossiers", "phase": "Atelier 3", "time": "70 à 90 min",
+      "intro": "Ouvrez votre dossier personnel, par exemple challenge-100j-nom-prenom. Conservez les quatre sous-dossiers de la séance 01 pour retrouver le travail enregistré.",
+      "blocks": [
+        {"type": "folders", "title": "Le bon contenu au bon endroit", "folders": [{"name": "01-depart", "role": "Point de départ et objectif", "files": ["fiche-depart-candidat.md", "objectif-personnel-challenge.md"]}, {"name": "02-prompts", "role": "Demandes et décisions", "files": ["premiers-prompts.md"]}, {"name": "03-livrables", "role": "Projets puis productions", "files": ["liste-premiers-livrables.md"]}, {"name": "04-portfolio-preuves", "role": "Journal daté et pièces utiles", "files": ["preuves-semaine-01.md", "capture-dossier-depart.png (si réalisée)"]}]},
+        {"type": "list", "title": "Les gestes à refaire", "ordered": true, "items": ["Dans VS Code, utilisez Ouvrir un dossier.", "Créez les sous-dossiers manquants puis le fichier demandé.", "Écrivez ou copiez votre contenu au bon endroit.", "Enregistrez avec Ctrl+S sous Windows ou Cmd+S sur Mac.", "Fermez le fichier et rouvrez-le depuis le panneau des fichiers.", "Vérifiez la dernière modification et renseignez la preuve."]},
+        {"type": "callout", "title": "Nommer et partager avec soin", "text": "Vérifiez que le nom finit par .md et non .md.txt. Gardez un nom stable et une date de révision dans le contenu. La fiche individuelle remplie reste dans votre espace personnel ; transmettez-la au formateur par le canal privé convenu."}
+      ],
+      "action": "Rouvrez votre objectif et montrez sa dernière phrase enregistrée."
+    },
+    {
+      "id": "preuve", "number": "06", "title": "Décrire une preuve", "short": "Ma première preuve", "phase": "Atelier 3", "time": "Après le contrôle",
+      "intro": "Une preuve précise ce que vous avez réellement fait. Elle relie un fichier à un contrôle, à un résultat observé et à une décision. Une capture seule ne suffit pas à expliquer votre progression.",
+      "blocks": [
+        {"type": "prompt", "title": "Modèle de journal à copier", "filename": "preuves-semaine-01.md", "text": "# Preuves de la semaine 01\n\n## Séance 02 du 28 septembre 2026\nDate de réalisation : [date réelle]\nObjectif travaillé : [une phrase]\nFichier examiné : 01-depart/objectif-personnel-challenge.md\nVersion ou date de révision : [à compléter]\nPrompt conservé dans : 02-prompts/premiers-prompts.md\nContrôle réalisé : [vérification effectuée]\nRésultat observé : [constat]\nCorrection décidée : [modification précise]\nCe que je sais expliquer : [geste ou choix]\nÀ compléter : [élément restant]\nProchaine action et date cible : [à compléter]\nPièce associée : [chemin de capture si disponible]\nRelecture par un pair : [nom et date si elle a eu lieu]"},
+        {"type": "quote", "title": "Exemple à adapter après votre propre contrôle", "text": "J’ai rouvert mon objectif depuis 01-depart. La dernière phrase était enregistrée. J’ai retiré une promesse de maîtrise de tous les outils. Mon objectif porte maintenant sur une fiche de trois exercices. Je dois encore choisir la date du guide d’utilisation."},
+        {"type": "list", "title": "Ce que vous devez pouvoir montrer", "items": ["Le fichier contenant l’objectif et sa version retenue.", "Une correction décidée et la raison de ce choix.", "Le journal décrivant le contrôle, avec la date réelle."]},
+        {"type": "callout", "title": "Une preuve sincère", "text": "Si vous relisez seul, indiquez « autocontrôle ». Mentionnez un pair uniquement si la relecture a eu lieu. La capture montre le classement ; le journal explique la progression."}
+      ],
+      "action": "Datez votre preuve après l’action et décrivez ce que vous avez réellement observé."
+    },
+    {
+      "id": "bilan", "number": "07", "title": "Faire le bilan", "short": "Mon bilan", "phase": "Bilan", "time": "90 à 100 min",
+      "intro": "Pour chaque point, choisissez réalisé, à compléter ou non vérifié. Le statut réalisé décrit une action que vous pouvez montrer.",
+      "blocks": [
+        {"type": "checklist", "title": "Les sept points à vérifier", "items": ["Mon objectif comporte les quatre rubriques.", "Mes trois livrables ont un nom, une utilité et une date cible.", "Je montre une correction ou j’explique un choix.", "Mon prompt adapté est conservé dans 02-prompts.", "Le fichier rouvert contient la version retenue.", "Ma preuve précise la date, le fichier, le contrôle et le résultat.", "Je connais ma prochaine action et sa date cible."]},
+        {"type": "quote", "title": "Une minute pour présenter son travail", "text": "Mon besoin est… Mon premier livrable sera… J’ai corrigé… Mon fichier se trouve… Ma prochaine action est…"},
+        {"type": "table", "title": "Un rattrapage en 30 minutes", "heads": ["Durée", "Action"], "rows": [["5 min", "Relire les notions et les sept étapes de méthode"], ["5 min", "Ouvrir le dossier et créer les sous-dossiers manquants"], ["10 min", "Écrire les quatre rubriques et la liste de trois livrables"], ["10 min", "Corriger, enregistrer, rouvrir et documenter la preuve"]]},
+        {"type": "callout", "title": "Adapter le parcours", "text": "Sans accès IA, rédigez l’objectif, préparez le prompt et indiquez que l’essai reste à effectuer. Sur téléphone, conservez une copie du texte à transférer ensuite. Si un pair vous montre un geste, refaites-le vous-même."}
+      ],
+      "action": "Formulez votre difficulté précise et la prochaine action qui permettra d’avancer."
+    },
+    {
+      "id": "suite", "number": "08", "title": "Préparer la suite", "short": "La prochaine action", "phase": "Après la rencontre", "time": "À votre rythme",
+      "intro": "Avant le prochain échange, vous devez pouvoir rouvrir votre objectif, expliquer une correction et annoncer l’action suivante. Faites confirmer l’Email-ID attendu par le formateur si vous ne le connaissez pas.",
+      "blocks": [
+        {"type": "list", "title": "Le travail à terminer", "items": ["Relire l’objectif et vérifier qu’il correspond à votre besoin.", "Préciser utilité, format, date cible et contrôle des trois livrables.", "Choisir le premier livrable et engager une action limitée.", "Conserver le prompt adapté, la correction et la preuve datée.", "Compléter séparément la fiche candidat et la transmettre au formateur."]},
+        {"type": "prompt", "title": "Message de suivi à personnaliser", "filename": "message-suivi-seance-02.md", "text": "Séance 02 du 28 septembre 2026\nPrénom ou identifiant de suivi : [à compléter en privé]\nMon objectif : [une phrase]\nMon premier livrable : [nom et utilité]\nCe que j’ai réalisé : [fichier ou action]\nCorrection retenue : [modification]\nPreuve disponible : [nom ou emplacement]\nDifficulté restante : [question précise]\nProchaine action et date cible : [à compléter]"},
+        {"type": "callout", "title": "Préparer la remise", "text": "Préparez l’objectif corrigé, la liste des trois livrables et l’entrée du journal. Ajoutez une capture recadrée si elle aide à comprendre le classement. Utilisez le canal privé annoncé par le formateur. Ce support ne transmet aucune réponse."},
+        {"type": "links", "title": "Ressources de la séance 01", "items": [{"text": "Site pédagogique : leçons, prompts et modèles", "url": "https://elhisse-clprepas.github.io/atelier-seance-01_25_SEPTEMBRE_2026/"}, {"text": "Dépôt GitHub : sources et ressources de l’atelier", "url": "https://github.com/elhisse-CLPrepas/atelier-seance-01_25_SEPTEMBRE_2026"}]}
+      ],
+      "action": "Choisissez une action concrète, une date réaliste et le résultat que vous pourrez montrer."
+    }
+  ]
+}

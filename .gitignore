@@ -22,4 +22,6 @@ privé/
 id_rsa
 id_ed25519
 qa/
+output/
+__pycache__/
 .vscode/
